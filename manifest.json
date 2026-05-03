@@ -1,7 +1,9 @@
 {
   "name": "Junior Software Engineer AI Project Operating System",
-  "purpose": "Cursor-ready folder containing guides, templates, checklists, prompts, and examples for building professional projects with AI.",
+  "purpose": "Cursor-ready folder containing guides, templates, checklists, prompts, examples, and GitHub workflow files for building professional projects with AI.",
   "recommended_start": "START-HERE.md",
+  "daily_start": "DAILY-WORKFLOW.md",
+  "new_project_start": "NEW-PROJECT-CHECKLIST.md",
   "official_workflow": [
     "Idea",
     "Clarify",
@@ -22,12 +24,24 @@
     "Portfolio/Client Presentation"
   ],
   "sections": {
+    "root": "Start files, daily workflow, new project checklist, license, and system overview.",
     "01-guides": "Core explanation and operating system rules, including the Spec Kit workflow.",
     "02-checklists": "Definition of done, Spec Kit, security, testing, deployment, and documentation checklists.",
     "03-templates": "Reusable files to copy into each new project, including Spec Kit templates.",
     "04-prompt-library": "Prompts for ChatGPT, Claude, Spec Kit, Cursor, CodeRabbit, and TestSprite workflows.",
-    "05-examples": "Example project and Spec Kit feature workflows."
+    "05-examples": "Example project and Spec Kit feature workflows.",
+    ".github": "Issue and pull request templates for professional GitHub workflow."
   },
+  "operating_files": [
+    "START-HERE.md",
+    "DAILY-WORKFLOW.md",
+    "NEW-PROJECT-CHECKLIST.md",
+    ".cursor-instructions.md"
+  ],
+  "github_workflow_files": [
+    ".github/pull_request_template.md",
+    ".github/ISSUE_TEMPLATE/feature_spec.md"
+  ],
   "spec_kit_files": [
     "01-guides/07-spec-kit-workflow.md",
     "02-checklists/spec-kit-checklist.md",
@@ -42,5 +56,6 @@
     "implementation": "Cursor implements one task at a time.",
     "after_coding_review": "CodeRabbit reviews pull requests.",
     "after_coding_qa": "Manual testing and TestSprite validate user journeys."
-  }
+  },
+  "license": "MIT"
 }
