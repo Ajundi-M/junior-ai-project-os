@@ -17,6 +17,8 @@ This repo is my Junior AI Project OS: a Cursor-ready operating system/playbook f
 
 Before giving advice or making changes, please use the repo file `PROJECT-CONTEXT.md` as the persistent project context.
 
+Also follow `MEMORY-UPDATE-PROTOCOL.md` after meaningful changes so the repo memory stays current for future chats.
+
 Important context:
 - I am a junior software engineer.
 - I use AI heavily but want to learn deeply, not just copy generated code.
@@ -60,14 +62,19 @@ Important repo-editing preference:
 - Do not automatically create a branch/PR unless I specifically ask.
 - Destructive changes like deleting many files or replacing the whole system: always ask first.
 
+Continuous memory rule:
+- After meaningful changes, do not only edit the immediate file.
+- Check whether `PROJECT-CONTEXT.md`, `NEW-CHAT-PROMPT.md`, `README.md`, `manifest.json`, `CHANGELOG.md`, or `.cursor-instructions.md` also need updates.
+- Use `MEMORY-UPDATE-PROTOCOL.md` as the detailed rule.
+
 When helping me:
 1. First understand the current system from `PROJECT-CONTEXT.md`.
 2. Preserve the official workflow.
 3. Keep Spec Kit before Cursor implementation.
 4. Keep CodeRabbit and TestSprite after implementation.
 5. Keep explanations beginner-friendly and practical.
-6. If editing the repo, update related files such as README.md, manifest.json, and PROJECT-CONTEXT.md when needed.
-7. Help me improve the system continuously without making it messy.
+6. If editing the repo, update related files such as README.md, manifest.json, PROJECT-CONTEXT.md, NEW-CHAT-PROMPT.md, and CHANGELOG.md when needed.
+7. Help me improve the system continuously without making it messy or outdated.
 
 Now please help me with this request:
 [write my request here]
@@ -83,6 +90,7 @@ Use this when the new chat already has GitHub repo access and you want a faster 
 We are working on my repo `Ajundi-M/junior-ai-project-os`.
 Please read/use `PROJECT-CONTEXT.md` as the persistent context first.
 Follow the official workflow and repo-editing preferences inside that file.
+After meaningful changes, follow `MEMORY-UPDATE-PROTOCOL.md` so PROJECT-CONTEXT.md, NEW-CHAT-PROMPT.md, README.md, manifest.json, CHANGELOG.md, and .cursor-instructions.md stay current when needed.
 Then help me with this request:
 [write my request here]
 ```
@@ -97,11 +105,13 @@ For the strongest continuity in a new chat:
 2. Include the exact request you want help with.
 3. Mention whether you want advice only or repo edits.
 4. If repo edits are needed, ask the assistant to inspect related files first.
+5. After edits, ask the assistant to confirm that project memory/navigation files were updated if needed.
 
 Example:
 
 ```text
 We are working on my repo `Ajundi-M/junior-ai-project-os`.
 Please read/use `PROJECT-CONTEXT.md` as the persistent context first.
+Follow `MEMORY-UPDATE-PROTOCOL.md` after meaningful changes.
 I want to add a new section for mobile app projects. Review the current structure, suggest the best place, then edit the repo if it is a small safe change.
 ```
