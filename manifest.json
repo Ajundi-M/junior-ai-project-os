@@ -1,9 +1,11 @@
 {
-  "name": "Junior Software Engineer AI Project Operating System",
-  "purpose": "Cursor-ready folder containing guides, templates, checklists, prompts, examples, and GitHub workflow files for building professional projects with AI.",
+  "name": "Junior AI Project OS",
+  "purpose": "Public, Cursor-ready developer operating system containing guides, templates, checklists, prompts, examples, and GitHub workflow files for building professional projects with AI.",
   "recommended_start": "START-HERE.md",
+  "persistent_context": "PROJECT-CONTEXT.md",
   "daily_start": "DAILY-WORKFLOW.md",
   "new_project_start": "NEW-PROJECT-CHECKLIST.md",
+  "publication_checklist": "PUBLICATION-CHECKLIST.md",
   "official_workflow": [
     "Idea",
     "Clarify",
@@ -24,7 +26,7 @@
     "Portfolio/Client Presentation"
   ],
   "sections": {
-    "root": "Start files, daily workflow, new project checklist, license, and system overview.",
+    "root": "Start files, persistent project context, daily workflow, new project checklist, publication checklist, license, and system overview.",
     "01-guides": "Core explanation and operating system rules, including the Spec Kit workflow.",
     "02-checklists": "Definition of done, Spec Kit, security, testing, deployment, and documentation checklists.",
     "03-templates": "Reusable files to copy into each new project, including Spec Kit templates.",
@@ -34,8 +36,10 @@
   },
   "operating_files": [
     "START-HERE.md",
+    "PROJECT-CONTEXT.md",
     "DAILY-WORKFLOW.md",
     "NEW-PROJECT-CHECKLIST.md",
+    "PUBLICATION-CHECKLIST.md",
     ".cursor-instructions.md"
   ],
   "github_workflow_files": [
@@ -56,6 +60,10 @@
     "implementation": "Cursor implements one task at a time.",
     "after_coding_review": "CodeRabbit reviews pull requests.",
     "after_coding_qa": "Manual testing and TestSprite validate user journeys."
+  },
+  "public_repo_safety": {
+    "intended_visibility": "public",
+    "rule": "Keep this as the polished public operating system. Keep private experiments, sensitive details, and messy drafts elsewhere."
   },
   "license": "MIT"
 }
