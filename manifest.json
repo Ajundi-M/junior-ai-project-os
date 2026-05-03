@@ -1,9 +1,11 @@
 {
   "name": "Junior AI Project OS",
-  "purpose": "Public, Cursor-ready developer operating system containing guides, templates, checklists, prompts, examples, and GitHub workflow files for building professional projects with AI.",
+  "purpose": "Public, Cursor-ready developer operating system containing guides, templates, checklists, prompts, examples, GitHub workflow files, and continuous memory-update rules for building professional projects with AI.",
   "recommended_start": "START-HERE.md",
   "persistent_context": "PROJECT-CONTEXT.md",
   "new_chat_prompt": "NEW-CHAT-PROMPT.md",
+  "memory_update_protocol": "MEMORY-UPDATE-PROTOCOL.md",
+  "changelog": "CHANGELOG.md",
   "daily_start": "DAILY-WORKFLOW.md",
   "new_project_start": "NEW-PROJECT-CHECKLIST.md",
   "publication_checklist": "PUBLICATION-CHECKLIST.md",
@@ -27,7 +29,7 @@
     "Portfolio/Client Presentation"
   ],
   "sections": {
-    "root": "Start files, persistent project context, new chat prompt, daily workflow, new project checklist, publication checklist, license, and system overview.",
+    "root": "Start files, persistent project context, new chat prompt, memory update protocol, changelog, daily workflow, new project checklist, publication checklist, license, and system overview.",
     "01-guides": "Core explanation and operating system rules, including the Spec Kit workflow.",
     "02-checklists": "Definition of done, Spec Kit, security, testing, deployment, and documentation checklists.",
     "03-templates": "Reusable files to copy into each new project, including Spec Kit templates.",
@@ -39,6 +41,8 @@
     "START-HERE.md",
     "PROJECT-CONTEXT.md",
     "NEW-CHAT-PROMPT.md",
+    "MEMORY-UPDATE-PROTOCOL.md",
+    "CHANGELOG.md",
     "DAILY-WORKFLOW.md",
     "NEW-PROJECT-CHECKLIST.md",
     "PUBLICATION-CHECKLIST.md",
@@ -62,6 +66,10 @@
     "implementation": "Cursor implements one task at a time.",
     "after_coding_review": "CodeRabbit reviews pull requests.",
     "after_coding_qa": "Manual testing and TestSprite validate user journeys."
+  },
+  "continuous_memory_rule": {
+    "rule": "After meaningful changes, check whether PROJECT-CONTEXT.md, NEW-CHAT-PROMPT.md, README.md, manifest.json, CHANGELOG.md, or .cursor-instructions.md need updates.",
+    "details": "MEMORY-UPDATE-PROTOCOL.md"
   },
   "public_repo_safety": {
     "intended_visibility": "public",
