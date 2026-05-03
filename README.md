@@ -174,15 +174,35 @@ Start with:
 
 1. `START-HERE.md`
 2. `PROJECT-CONTEXT.md`
-3. `DAILY-WORKFLOW.md`
-4. `NEW-PROJECT-CHECKLIST.md`
-5. `01-guides/01-core-philosophy.md`
-6. `01-guides/02-project-lifecycle.md`
-7. `01-guides/07-spec-kit-workflow.md`
-8. `03-templates/project-brief.md`
-9. `03-templates/project-constitution.md`
+3. `NEW-CHAT-PROMPT.md`
+4. `DAILY-WORKFLOW.md`
+5. `NEW-PROJECT-CHECKLIST.md`
+6. `01-guides/01-core-philosophy.md`
+7. `01-guides/02-project-lifecycle.md`
+8. `01-guides/07-spec-kit-workflow.md`
+9. `03-templates/project-brief.md`
+10. `03-templates/project-constitution.md`
 
 For every new project, copy the relevant templates into the actual project repository and fill them in.
+
+---
+
+## Starting a New Chat About This Repo
+
+Use `NEW-CHAT-PROMPT.md` when starting a fresh ChatGPT conversation.
+
+That file contains a copy-paste prompt that tells the new chat to use `PROJECT-CONTEXT.md` as the persistent memory source for this project.
+
+Recommended flow:
+
+```text
+Open NEW-CHAT-PROMPT.md
+→ Copy the full prompt or short version
+→ Paste it into a new ChatGPT chat
+→ Add your new request at the end
+```
+
+This keeps future chats clean while preserving the important context from this project.
 
 ---
 
@@ -192,8 +212,10 @@ For every new project, copy the relevant templates into the actual project repos
 .
 ├── START-HERE.md
 ├── PROJECT-CONTEXT.md
+├── NEW-CHAT-PROMPT.md
 ├── DAILY-WORKFLOW.md
 ├── NEW-PROJECT-CHECKLIST.md
+├── PUBLICATION-CHECKLIST.md
 ├── 01-guides/
 ├── 02-checklists/
 ├── 03-templates/
@@ -212,8 +234,10 @@ For every new project, copy the relevant templates into the actual project repos
 ```text
 START-HERE.md = first file to read
 PROJECT-CONTEXT.md = persistent context for future AI chats
+NEW-CHAT-PROMPT.md = copy-paste prompt for starting clean future chats
 DAILY-WORKFLOW.md = what to do when opening Cursor each day
 NEW-PROJECT-CHECKLIST.md = how to start a project from zero
+PUBLICATION-CHECKLIST.md = safety/professional checklist before sharing publicly
 .cursor-instructions.md = guidance for Cursor behavior
 manifest.json = machine-readable overview of the system
 ```
