@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+*.log
+
+# Local editor and tool state
+.vscode/
+.idea/
+
+# Common dependency/build folders if this becomes an app later
+node_modules/
+dist/
+build/
+coverage/

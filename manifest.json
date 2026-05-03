@@ -1,0 +1,46 @@
+{
+  "name": "Junior Software Engineer AI Project Operating System",
+  "purpose": "Cursor-ready folder containing guides, templates, checklists, prompts, and examples for building professional projects with AI.",
+  "recommended_start": "START-HERE.md",
+  "official_workflow": [
+    "Idea",
+    "Clarify",
+    "Define Project Level",
+    "Choose Stack",
+    "Project Constitution",
+    "Spec Kit: Specify",
+    "Spec Kit: Plan",
+    "Spec Kit: Tasks",
+    "Cursor: Implement One Task",
+    "Self-Review",
+    "CodeRabbit Review",
+    "Manual Testing",
+    "TestSprite Testing",
+    "Security Review",
+    "Deployment",
+    "Documentation",
+    "Portfolio/Client Presentation"
+  ],
+  "sections": {
+    "01-guides": "Core explanation and operating system rules, including the Spec Kit workflow.",
+    "02-checklists": "Definition of done, Spec Kit, security, testing, deployment, and documentation checklists.",
+    "03-templates": "Reusable files to copy into each new project, including Spec Kit templates.",
+    "04-prompt-library": "Prompts for ChatGPT, Claude, Spec Kit, Cursor, CodeRabbit, and TestSprite workflows.",
+    "05-examples": "Example project and Spec Kit feature workflows."
+  },
+  "spec_kit_files": [
+    "01-guides/07-spec-kit-workflow.md",
+    "02-checklists/spec-kit-checklist.md",
+    "03-templates/spec-kit-feature-spec.md",
+    "03-templates/spec-kit-technical-plan.md",
+    "03-templates/spec-kit-task-list.md",
+    "04-prompt-library/07-spec-kit-prompts.md",
+    "05-examples/example-spec-kit-feature-flow.md"
+  ],
+  "quality_gates": {
+    "before_coding": "Spec Kit specification, technical plan, and task list for Level 2+ work.",
+    "implementation": "Cursor implements one task at a time.",
+    "after_coding_review": "CodeRabbit reviews pull requests.",
+    "after_coding_qa": "Manual testing and TestSprite validate user journeys."
+  }
+}
