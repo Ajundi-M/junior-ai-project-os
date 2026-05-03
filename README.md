@@ -22,13 +22,26 @@ Open this folder in Cursor.
 Start with:
 
 1. `START-HERE.md`
-2. `01-guides/01-core-philosophy.md`
-3. `01-guides/02-project-lifecycle.md`
-4. `01-guides/07-spec-kit-workflow.md`
-5. `03-templates/project-brief.md`
-6. `03-templates/project-constitution.md`
+2. `DAILY-WORKFLOW.md`
+3. `NEW-PROJECT-CHECKLIST.md`
+4. `01-guides/01-core-philosophy.md`
+5. `01-guides/02-project-lifecycle.md`
+6. `01-guides/07-spec-kit-workflow.md`
+7. `03-templates/project-brief.md`
+8. `03-templates/project-constitution.md`
 
 For every new project, copy the templates into your actual project repo and fill them in.
+
+## Daily Operating Files
+
+Use these files often:
+
+```text
+DAILY-WORKFLOW.md = what to do when you open Cursor each day
+NEW-PROJECT-CHECKLIST.md = how to start a project from zero
+.github/pull_request_template.md = how to prepare professional PRs for CodeRabbit/review
+.github/ISSUE_TEMPLATE/feature_spec.md = how to start a feature from a Spec Kit issue
+```
 
 ## Main Workflow
 
@@ -85,6 +98,7 @@ Planning: Spec Kit specification, technical plan, and task list
 Testing: Manual + important unit/integration tests + TestSprite for main journeys
 Review: CodeRabbit on pull requests
 Documentation: README + architecture notes + portfolio writeup
+GitHub workflow: feature issues + pull request template
 ```
 
 ## Important Rule
