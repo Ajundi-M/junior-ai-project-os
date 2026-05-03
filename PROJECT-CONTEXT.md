@@ -89,6 +89,7 @@ Document before showing
 Use AI as a team, not magic
 Never accept AI code blindly
 Every project must teach something
+Keep project memory updated after meaningful changes
 ```
 
 Important learning rule:
@@ -322,16 +323,57 @@ The user gave approval for ongoing edits to this repo when requested in chat, wi
 
 ---
 
-## 11. Important Repo Files
+## 11. Continuous Memory Update Protocol
+
+This repo must stay current as the system evolves.
+
+After every meaningful update, check whether these files need updates:
+
+```text
+PROJECT-CONTEXT.md
+NEW-CHAT-PROMPT.md
+README.md
+manifest.json
+CHANGELOG.md
+.cursor-instructions.md
+```
+
+Meaningful updates include:
+
+```text
+New workflow decision
+New tool added or removed
+New guide/checklist/template/prompt added
+Project structure changed
+Repo-editing preference changed
+Quality gate changed
+Stack strategy changed
+Important correction to system behavior
+```
+
+Rule for future assistants:
+
+```text
+Do not only edit the immediate file.
+After meaningful changes, update the memory/navigation files so future chats inherit the latest state.
+Use MEMORY-UPDATE-PROTOCOL.md as the detailed rule.
+```
+
+---
+
+## 12. Important Repo Files
 
 Start here:
 
 ```text
 README.md
 START-HERE.md
+PROJECT-CONTEXT.md
+NEW-CHAT-PROMPT.md
 DAILY-WORKFLOW.md
 NEW-PROJECT-CHECKLIST.md
-PROJECT-CONTEXT.md
+MEMORY-UPDATE-PROTOCOL.md
+CHANGELOG.md
 ```
 
 Core guides:
@@ -391,13 +433,22 @@ GitHub workflow:
 
 ---
 
-## 12. How Future Chats Should Start
+## 13. How Future Chats Should Start
 
-When starting a new chat about this system, the user can say:
+When starting a new chat about this system, the user can use:
 
 ```text
-We are working on my Junior AI Project OS repo: Ajundi-M/junior-ai-project-os.
-Please read/use PROJECT-CONTEXT.md as the persistent context before suggesting changes.
+NEW-CHAT-PROMPT.md
+```
+
+Short version:
+
+```text
+We are working on my repo `Ajundi-M/junior-ai-project-os`.
+Please read/use `PROJECT-CONTEXT.md` as the persistent context first.
+Follow the official workflow and repo-editing preferences inside that file.
+Then help me with this request:
+[write my request here]
 ```
 
 The assistant should then:
@@ -410,11 +461,12 @@ The assistant should then:
 5. Treat Spec Kit as before-coding governance.
 6. Treat CodeRabbit and TestSprite as after-coding quality gates.
 7. For risky repo changes, tell the user first and wait for approval.
+8. After meaningful updates, update memory/navigation files using MEMORY-UPDATE-PROTOCOL.md.
 ```
 
 ---
 
-## 13. Current Direction
+## 14. Current Direction
 
 The project should be updated continuously as the user learns better workflows, tools, and practices.
 
