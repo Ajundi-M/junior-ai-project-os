@@ -175,13 +175,14 @@ Start with:
 1. `START-HERE.md`
 2. `PROJECT-CONTEXT.md`
 3. `NEW-CHAT-PROMPT.md`
-4. `DAILY-WORKFLOW.md`
-5. `NEW-PROJECT-CHECKLIST.md`
-6. `01-guides/01-core-philosophy.md`
-7. `01-guides/02-project-lifecycle.md`
-8. `01-guides/07-spec-kit-workflow.md`
-9. `03-templates/project-brief.md`
-10. `03-templates/project-constitution.md`
+4. `MEMORY-UPDATE-PROTOCOL.md`
+5. `DAILY-WORKFLOW.md`
+6. `NEW-PROJECT-CHECKLIST.md`
+7. `01-guides/01-core-philosophy.md`
+8. `01-guides/02-project-lifecycle.md`
+9. `01-guides/07-spec-kit-workflow.md`
+10. `03-templates/project-brief.md`
+11. `03-templates/project-constitution.md`
 
 For every new project, copy the relevant templates into the actual project repository and fill them in.
 
@@ -206,6 +207,21 @@ This keeps future chats clean while preserving the important context from this p
 
 ---
 
+## Keeping the System Updated
+
+Use `MEMORY-UPDATE-PROTOCOL.md` after meaningful changes.
+
+The rule is:
+
+```text
+Do not only edit the immediate file.
+After meaningful changes, check whether PROJECT-CONTEXT.md, NEW-CHAT-PROMPT.md, README.md, manifest.json, CHANGELOG.md, or .cursor-instructions.md also need updates.
+```
+
+Use `CHANGELOG.md` to record meaningful changes so future chats and future Cursor sessions understand what changed and why.
+
+---
+
 ## Repository Structure
 
 ```text
@@ -213,6 +229,8 @@ This keeps future chats clean while preserving the important context from this p
 ├── START-HERE.md
 ├── PROJECT-CONTEXT.md
 ├── NEW-CHAT-PROMPT.md
+├── MEMORY-UPDATE-PROTOCOL.md
+├── CHANGELOG.md
 ├── DAILY-WORKFLOW.md
 ├── NEW-PROJECT-CHECKLIST.md
 ├── PUBLICATION-CHECKLIST.md
@@ -235,6 +253,8 @@ This keeps future chats clean while preserving the important context from this p
 START-HERE.md = first file to read
 PROJECT-CONTEXT.md = persistent context for future AI chats
 NEW-CHAT-PROMPT.md = copy-paste prompt for starting clean future chats
+MEMORY-UPDATE-PROTOCOL.md = rules for keeping project memory current after updates
+CHANGELOG.md = history of meaningful system changes
 DAILY-WORKFLOW.md = what to do when opening Cursor each day
 NEW-PROJECT-CHECKLIST.md = how to start a project from zero
 PUBLICATION-CHECKLIST.md = safety/professional checklist before sharing publicly
